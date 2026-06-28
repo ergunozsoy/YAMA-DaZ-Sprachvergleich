@@ -113,7 +113,7 @@
     </div>
     <div class="navtop"><a onclick="showLit()">📚 <span>Literatur</span></a></div>
     <nav id="nav"></nav>
-    <div class="side-foot">© Dr. Ergun Özsoy · alle Rechte vorbehalten<br>ALM 260 · Karşılaştırmalı Dilbilgisi<br>LMU München</div>
+    <div class="side-foot">Konzept &amp; Inhalt: Dr. Ergun Özsoy<br>LMU München · alle Rechte vorbehalten</div>
   </aside>
 
   <main>
@@ -246,7 +246,7 @@ function filter(v){
   document.querySelectorAll('#cards .tcard').forEach(c=>c.style.display=c.dataset.name.includes(v)?'':'none');
 }
 document.getElementById('hfoot').innerHTML =
-  `Konzept, Inhalt &amp; alle Rechte: <b>Dr. Ergun Özsoy</b>, LMU München · ALM 260. `+
+  `Konzept &amp; Inhalt: <b>Dr. Ergun Özsoy</b>, LMU München. `+
   `Verwendete Quellen ausschließlich auf der Seite <a onclick="showLit()">Literatur</a>.`;
 buildNav(); buildCards(); buildSheets();
 </script>

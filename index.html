@@ -286,6 +286,7 @@ function show(id){ ['home','detail','litpage'].forEach(s=>document.getElementByI
 function home(){ document.querySelectorAll('#nav a').forEach(a=>a.classList.remove('active')); show('home'); }
 
 function openTopic(id){
+  try{ if(history.replaceState) history.replaceState(null,'','#'+id); }catch(e){}
   const d=DETAIL[id]; if(!d){return;}
   document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('active',a.dataset.id===id));
   const sheet=SHEET_FOR[id];
@@ -329,6 +330,14 @@ document.getElementById('hfoot').innerHTML =
   `Konzept &amp; Inhalt: <b>Dr. Ergun Özsoy</b>, LMU München. `+
   `Verwendete Quellen ausschließlich auf der Seite <a onclick="showLit()">Literatur</a>.`;
 buildNav(); buildCards(); buildSheets();
+
+// Deep-Link: #topicId ile doğrudan modül açma (ör. #wortstell, #genus)
+function _openFromHash(){
+  var id=(location.hash||"").replace("#","").trim();
+  if(id && APP.detail && APP.detail[id]) openTopic(id);
+}
+window.addEventListener("hashchange", _openFromHash);
+_openFromHash();
 </script>
 </body>
 </html>

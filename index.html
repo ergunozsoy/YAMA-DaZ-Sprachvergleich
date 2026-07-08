@@ -148,7 +148,7 @@
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#000"><circle cx="11" cy="11" r="7" stroke-width="2"/><path d="M21 21l-4-4" stroke-width="2"/></svg>
       <input id="q" placeholder="Thema suchen …" oninput="filter(this.value)">
     </div>
-    <div class="navtop"><a onclick="showLit()">📚 <span>Literatur</span></a></div>
+    <div class="navtop"><a onclick="showLit()">📚 <span>Literatur</span></a><a href="https://github.com/ergunozsoy/YAMA-DaZ-Sprachvergleich/blob/main/YAMA_WERKSTATT.md" target="_blank" rel="noopener">🛠 <span>Werkstatt (Digital Humanities)</span></a></div>
     <nav id="nav"></nav>
     <div class="side-foot">Konzept &amp; Inhalt: Dr. Ergun Özsoy<br>LMU München · alle Rechte vorbehalten</div>
   </aside>
@@ -327,7 +327,7 @@ function filter(v){
   document.querySelectorAll('#cards .tcard').forEach(c=>c.style.display=c.dataset.name.includes(v)?'':'none');
 }
 document.getElementById('hfoot').innerHTML =
-  `Konzept &amp; Inhalt: <b>Dr. Ergun Özsoy</b>, LMU München. `+
+  `Konzept &amp + ' · <a href="https://github.com/ergunozsoy/YAMA-DaZ-Sprachvergleich/blob/main/YAMA_WERKSTATT.md" target="_blank" rel="noopener" style="color:inherit">Werkstattbericht</a>'; Inhalt: <b>Dr. Ergun Özsoy</b>, LMU München. `+
   `Verwendete Quellen ausschließlich auf der Seite <a onclick="showLit()">Literatur</a>.`;
 buildNav(); buildCards(); buildSheets();
 

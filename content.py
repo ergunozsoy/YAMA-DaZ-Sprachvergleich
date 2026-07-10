@@ -479,6 +479,82 @@ LIT_INTRO = ("Auswahlbibliografie zum Sprachvergleich Deutsch–Türkisch und zu
   "Grundlagenwerke (sprachübergreifend, u. a. aus den DaZ-Literaturempfehlungen der LMU). "
   "Die Liste dient als Referenz – Konzept und Inhalt der Plattform stammen von Dr. Ergun Özsoy.")
 
+# === Fazit & Ausblick ======================================================
+FAZIT = dict(
+ titel="Fazit & Ausblick",
+ untertitel="Was der Sprachvergleich lehrt",
+ lead=("Neunzehn Themen in drei Modulen – und ein wiederkehrendes Muster: Das Deutsche wird "
+   "verständlicher, wenn man es durch die Brille des Türkischen betrachtet. Dieses Fazit bündelt "
+   "die Befunde der Themen-Dossiers und formuliert Folgerungen für den DaZ-Unterricht."),
+ blocks=[
+  ("Der Leitgedanke: Deutsch durch eine andere Brille",
+   P("Wer Deutsch als Erstsprache spricht, hält Genus, Verbzweitstellung oder Satzklammer für "
+     "selbstverständlich. Sichtbar werden diese Kategorien erst im Kontrast – durch die Brille einer "
+     "Sprache, die sie anders oder gar nicht kennt. Der Sprachvergleich macht so die Struktur des "
+     "Deutschen selbst zum Gegenstand: Was von innen „natürlich“ wirkt, erweist sich als <i>eine</i> "
+     "Bauform unter mehreren möglichen.")
+   +P("Der Nutzen ist doppelt. <b>Lernende</b> verstehen, warum ihnen das Deutsche an bestimmten "
+     "Stellen Mühe macht – und dass ihre „Fehler“ meist folgerichtige Hypothesen sind. <b>Lehrende</b> "
+     "gewinnen ein diagnostisches Raster: Sie erkennen, welche Lernerform aus der L1 stammt, welche im "
+     "Deutschen selbst angelegt ist – und wo die Erstsprache als Brücke trägt.")),
+  ("Was der Vergleich zeigt",
+   "<ul class='li'>"
+   "<li><b>Lernerfehler sind selten zufällig.</b> Sie folgen Regeln – entweder denen der Erstsprache "
+   "(<i>interlingual</i>) oder einer Übergeneralisierung des Deutschen (<i>intralingual</i>). Wer die "
+   "Ursache kennt, korrigiert gezielter.</li>"
+   "<li><b>Schwierigkeit ist relativ zur L1.</b> Für türkischsprachige Lernende liegt die Hauptlast "
+   "dort, wo das Deutsche Kategorien fordert, die das Türkische nicht kennt (Genus, Artikel), oder "
+   "anders kodiert: Präposition statt Kasussuffix, Verbzweit statt verbfinaler Grundstellung.</li>"
+   "<li><b>Typologische Distanz schärft den Blick.</b> Agglutinierend vs. flektierend heißt: dieselben "
+   "<i>Funktionen</i> (Bestimmtheit, Kasus, Unterordnung) werden mit ganz anderen <i>Mitteln</i> gebaut. "
+   "Die Funktion ist den Lernenden meist vertraut – neu ist nur die deutsche Bauform.</li>"
+   "<li><b>Die Systematik des Türkischen ist eine Ressource.</b> Transparente Suffixe, klare "
+   "Kasusbedeutungen, lautgetreue Schrift: Diese analytische Klarheit ist ein Anknüpfungspunkt, "
+   "kein Hindernis.</li></ul>"),
+  ("Das Profil der L1 Türkisch: Hürden und Ressourcen",
+   P("Aus den neunzehn Einzelbefunden ergibt sich ein klares Gesamtprofil:")
+   +"<table><tr><th>Typische Hürden (aus L1-Sicht)</th><th>Ressourcen &amp; Brücken</th></tr>"
+   "<tr><td><ul class='li'>"
+   "<li>Genus &amp; Artikel – Kategorie ohne L1-Entsprechung</li>"
+   "<li>V2 &amp; Satzklammer – konsequent verbfinale L1 (SOV)</li>"
+   "<li>Präpositionen + Kasusrektion – Suffixlogik der L1</li>"
+   "<li>Pluraltypen &amp; Umlaut – ein L1-Suffix ("+k("-lAr")+") gegen fünf Muster</li>"
+   "<li>Relativsatz – vorangestelltes Partizip statt Pronomen</li>"
+   "<li>Graphem-Lautwerte (v, w, z) &amp; Konsonantencluster</li>"
+   "</ul></td><td><ul class='li'>"
+   "<li>Auslautverhärtung als vertrauter Lautprozess ("+k("kitap/kitabı")+")</li>"
+   "<li>ö/ü vorhanden – Aussprachevorsprung</li>"
+   "<li>Lautgetreue L1-Orthographie – Lesevorsprung</li>"
+   "<li>Reiches Kasussystem – das <i>Konzept</i> Kasus ist vertraut</li>"
+   "<li>Bestimmtheit über Akkusativ ("+k("-i")+"/"+k("bir")+") – Funktion bekannt, nur anders kodiert</li>"
+   "<li>Evidentialität ("+k("-di/-miş")+") – Ausdrucksreichtum als Sprachbewusstheits-Anker</li>"
+   "</ul></td></tr></table>"
+   +NOTE("Dasselbe Deutsch – aber ein eigenes Anforderungsprofil: Welche Themen „schwer“ sind, entscheidet die Erstsprache mit.")),
+  ("Folgerungen für den DaZ-Unterricht",
+   "<ul class='li'>"
+   "<li><b>1 · Fehler diagnostisch lesen.</b> Lernerformen sind Fenster in die Lernersprache. Vor der "
+   "Korrektur steht die Ursachenfrage: interlingual, intralingual – oder ein normaler Entwicklungsschritt?</li>"
+   "<li><b>2 · Kontrastiv bewusst machen – gezielt und dosiert.</b> Sprachvergleich dort einsetzen, wo "
+   "die L1 systematisch interferiert oder eine Brücke bietet; er ist Werkzeug, kein Dauerprinzip.</li>"
+   "<li><b>3 · Ressourcen aktivieren.</b> Vorhandenes Wissen (Kasuskonzept, Bestimmtheit, "
+   "Auslautverhärtung, ö/ü) explizit nutzen: Neues an Bekanntem verankern statt bei null zu beginnen.</li>"
+   "<li><b>4 · Priorisieren.</b> Häufigkeit, Fossilisierungsgefahr und curriculares Gewicht bestimmen "
+   "die Reihenfolge – die ★-Kernthemen zuerst.</li>"
+   "<li><b>5 · Fehlertoleranz mit Korrekturplan.</b> Entwicklungsfehler zulassen, fossilisierungs­gefährdete "
+   "Kontraste (Genus/Artikel, V2) dagegen früh und konsequent fördern.</li></ul>"),
+  ("Grenzen & Ausblick",
+   P("Der kontrastive Vergleich <b>erklärt und diagnostiziert</b> – er prognostiziert nicht alles. Die "
+     "starke Kontrastivhypothese gilt als überholt; Erwerb verläuft in Phasen, individuelle Faktoren "
+     "(Alter, Kontakt, Motivation) wirken mit, und viele „typische“ Fehler betreffen vor allem "
+     "erwachsene Lernende. Der Vergleich ist deshalb ein <i>Diagnose- und Erklärungsinstrument</i> im "
+     "Rahmen der Lernersprachen-Theorie – nicht ihr Ersatz.")
+   +P("Das Fünf-Schritte-Raster dieser Plattform ist auf weitere Erstsprachen übertragbar: Jede L1 "
+     "erzeugt ihr eigenes Profil aus Hürden und Ressourcen. Die Plattform bleibt ein lebendes "
+     "Arbeitsinstrument – Erweiterungen werden im Werkstattbericht dokumentiert; Quellen auf der "
+     "Literatur-Seite.")),
+ ])
+
 def app_json():
     return {"modules":MODULES,"detail":DETAIL,"sheets":SHEETS,
-            "sheetFor":SHEET_FOR,"blocknames":BLOCKNAMES,"lit":LIT,"litIntro":LIT_INTRO}
+            "sheetFor":SHEET_FOR,"blocknames":BLOCKNAMES,"lit":LIT,"litIntro":LIT_INTRO,
+            "fazit":FAZIT}

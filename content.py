@@ -76,12 +76,12 @@ DETAIL["alphabet"]=dict(
      ("Sonderzeichen","ä ö ü ß",f"{k('ç ş ğ ı')} (kein ß, kein q/w/x)"),
      ("Beispiele",f"{d('v')}=[f], {d('w')}=[v], {d('z')}=[ts], {d('ch')}=[x]/[ç], {d('ei')}=[aɪ]",
       f"{k('c')}=[dʒ], {k('ç')}=[tʃ], {k('ş')}=[ʃ], {k('j')}=[ʒ]")])
-  +NOTE("Kernpunkt: TR-Lernende erwarten Lautgetreue – die deutschen Sonderfälle wirken wie „Ausnahmen“ und müssen als geschlossene Liste vermittelt werden."),
+  +NOTE("Kernpunkt: TR-Lernende erwarten Lauttreue – die deutschen Sonderfälle wirken wie „Ausnahmen“ und müssen als geschlossene Liste vermittelt werden."),
   P("Aussprache <i>und</i> Lesetechnik sind betroffen: Wer ⟨v, w, z, ch, ei, eu⟩ lautgetreu liest, verliest sich systematisch. Früh im DaZ-/Alphabetisierungsprozess zu sichern."),
   ITAB([("[ˈvaːtɐ] für Vater","[ˈfaːtɐ]",f"{k('v')} im Türkischen = [v]","interlingual"),
         ("[zaɪt] für Zeit","[tsaɪt]",f"{k('z')} im Türkischen = [z]","interlingual"),
-        ("[ˈwasɐ] für Wasser","[ˈvasɐ]",f"{k('w')} im Türkischen = [v]","interlingual")]),
-  P("Laut-Buchstaben-Tabelle der Abweichungen; <b>Minimalpaare</b> (Vater/Wasser, Zeit/seit); Lautgebärden; lautes Lesen mit markierten Sonderfällen ⟨v w z s sch ch ei eu äu st sp⟩."),
+        ("[neːin] für nein (e+i)","[naɪn]","⟨ei⟩ lautgetreu als zwei Vokale gelesen","interlingual")]),
+  P("Laut-Buchstaben-Tabelle der Abweichungen; <b>Minimalpaare</b> (Wein/fein, Zeit/seit); Lautgebärden; lautes Lesen mit markierten Sonderfällen ⟨v w z s sch ch ei eu äu st sp⟩."),
   P("Die lautgetreue türkische Orthographie ist ein <b>Lesevorsprung</b> – das Prinzip „Buchstabe→Laut“ beherrschen die Lernenden bereits. Aufgabe: nur die deutschen Abweichungen ergänzen, nicht das Lesen neu lernen."),
  ])
 
@@ -89,7 +89,7 @@ DETAIL["auslaut"]=dict(
  modul="Modul I · Laut & Schrift", titel="Auslautverhärtung",
  lead="Beide Sprachen entstimmen Plosive am Wortende – aber sie verschriften das Ergebnis unterschiedlich. Genau dort entsteht ein orthographischer Interferenzfehler.",
  blocks=[
-  T([("Phonolog. Prozess",f"Entstimmung der Obstruenten {d('/b d g/→[p t k]')}",f"Entstimmung der Plosive {k('/b d c g/→[p t ç k]')}"),
+  T([("Phonolog. Prozess",f"Entstimmung der Obstruenten am <b>Silben-/Wortende</b>: {d('/b d g/→[p t k]')}, auch {d('/v z/→[f s]')} ({d('brav, Gras')})",f"Entstimmung der Plosive {k('/b d c g/→[p t ç k]')}"),
      ("gesprochen",f"{d('Tag')} [taːk], {d('Hund')} [hʊnt], {d('lieb')} [liːp]",f"{k('kitap')} [kitap], {k('renk')} [reŋk]"),
      ("Verschriftung",f"<b>morphophonemisch</b>: Graphem bleibt ({d('Tag·e')})",f"<b>oberflächenphonemisch</b>: man schreibt das Gehörte ({k('kitap')}, aber {k('kitabı')})")])
   +NOTE("Kernpunkt: Den <i>Laut</i> kennen TR-Lernende bereits – nur die <i>Schreibkonvention</i> ist neu."),
@@ -114,7 +114,7 @@ DETAIL["sprossv"]=dict(
   ITAB([(k('sıport')+" für Sport","Sport","Vokaleinschub vor /sp/ (L1-Phonotaktik)","interlingual"),
         (k('kıraft'),"Kraft","Aufbrechen von /kr/ durch Sprossvokal","interlingual"),
         ("Herbst → Herbs","Herbst","Auslaut-Cluster vereinfacht","intralingual")]),
-  P("Silbensegmentierung, langsames Sprechen mit allmählicher Verdichtung, <b>Cluster-Minimalpaare</b> (Stadt/Satt), Sprech-Schreib-Kopplung."),
+  P("Silbensegmentierung, langsames Sprechen mit allmählicher Verdichtung, <b>Cluster-Minimalpaare</b> (Rand/Brand), Sprech-Schreib-Kopplung."),
   P("Den Lernenden bewusst machen: Der Sprossvokal ist eine <i>Regel der L1</i>, kein Defizit. Sichtbar gemachte Kontraste (türkische Silbe vs. deutsches Cluster) entlasten und erklären den eigenen „Akzent“."),
  ])
 
@@ -126,13 +126,13 @@ DETAIL["graphem"]=dict(
      ("⟨w⟩",f"[v] – {d('Wasser')}","existiert nicht"),
      ("⟨z⟩",f"[ts] – {d('Zeit')}",f"[z] – {k('zaman')}"),
      ("⟨c⟩ / ⟨ç⟩","[k]/[ts] (Fremdw.)",f"[dʒ] / [tʃ] – {k('cam / çay')}"),
-     ("⟨ı⟩ vs ⟨i⟩","kein ⟨ı⟩; ⟨i⟩=[ɪ]/[iː]",f"[ɯ] vs [i] – {k('kız / kiz')}")],
+     ("⟨ı⟩ vs ⟨i⟩","kein ⟨ı⟩; ⟨i⟩=[ɪ]/[iː]",f"[ɯ] vs [i] – {k('kıl / kil')}")],
     head=("Graphem","Deutsch","Türkisch")),
   P("Weil die Buchstaben <i>vertraut</i> aussehen, wird der falsche Lautwert oft unbemerkt übertragen – beim Lesen wie beim Schreiben."),
   ITAB([("[v]ater","[f]ater",f"{k('v')} im Türkischen = [v]","interlingual"),
         ("[z]eit","[ts]eit",f"{k('z')} im Türkischen = [z]","interlingual"),
-        ("⟨w⟩ als [w]","[v]","⟨w⟩ existiert im Türkischen nicht","interlingual")]),
-  P("Graphem-Phonem-Kontrasttabelle; <b>farbige Markierung</b> der „falschen Freunde“; Minimalpaare (Vater/Wasser, Zeit/seit); Diktat mit Fokus auf ⟨v w z⟩."),
+        ("⟨w⟩ als [w]","[v]","Übertragung aus dem Englischen (L3); im Türkischen fehlt ⟨w⟩","interlingual")]),
+  P("Graphem-Phonem-Kontrasttabelle; <b>farbige Markierung</b> der „falschen Freunde“; Minimalpaare (Wein/fein, Zeit/seit); Diktat mit Fokus auf ⟨v w z⟩."),
   P("Leitidee bewusst machen: <b>Ein Buchstabe hat keinen universellen Lautwert.</b> Die türkischen Werte sind nicht falsch – sie gelten nur in der L1. Sprachvergleich macht das System sichtbar."),
  ])
 
@@ -189,7 +189,7 @@ DETAIL["pronomen"]=dict(
  modul="Modul II · Morphologie", titel="Pronomen",
  lead="Beide Sprachen haben Personalpronomen – doch das Türkische drückt Besitz per Suffix aus und lässt das Subjekt weg (Pro-Drop). Das überträgt sich gern ins Deutsche.",
  blocks=[
-  T([("Personalpron.",f"flektiert: {d('ich / mich / mir')}",f"{k('ben / sen / o')}"),
+  T([("Personalpron.",f"flektiert: {d('ich / mich / mir')}",f"ebenfalls flektiert, per Suffix: {k('ben / beni / bana')}"),
      ("Possessiv",f"eigenes Wort: {d('mein Buch')}",f"Suffix (+ optional Pron.): {k('(benim) kitab-ım')}"),
      ("Subjekt",f"obligatorisch (auch {d('es')})",f"weglassbar – <b>Pro-Drop</b>: {k('geliyorum')}")]),
   P("Zwei Strukturunterschiede mit hoher Fehlerlast: das obligatorische deutsche Subjekt und der Possessivartikel als eigenständiges Wort."),
@@ -241,7 +241,7 @@ DETAIL["zeit"]=dict(
     head=("Bereich","Deutsch","Türkisch")),
   P("Lernschwer ist nicht die Form, sondern der <b>Gebrauch</b>: Perfekt vs. Präteritum, Aorist → Präsens, und die fehlende deutsche Evidentialität."),
   ITAB([("Ich ging gestern (mündlich)","Ich bin … gegangen","Präteritum statt mündlichem Perfekt","intralingual"),
-        ("Ich gehe morgen (ohne Markierung)","Ich werde gehen / Ich gehe morgen","Präsens für Zukunft","intralingual"),
+        ("Ich werde morgen zur Schule gehen (durchgängig)","Ich gehe morgen zur Schule","obligatorisches türkisches Futur (-ecek) → werden übergeneralisiert","interlingual"),
         (k('-miş')+"-Bedeutung nicht ausgedrückt","er sei gekommen / er soll …","Evidentialität der L1 nicht 1:1 kodierbar","interlingual")]),
   P("Perfekt als <b>mündliche</b> Vergangenheit etablieren; Tempusgebrauch funktional statt 1:1; Evidentialität ("+k('-di/-miş')+") im Deutschen lexikalisch wiedergeben (angeblich, soll, sei)."),
   P("Die türkische Evidentialität ("+k('-di/-miş')+") ist ein <b>Ausdrucksreichtum</b>, kein Hindernis. Sie schärft den Blick dafür, wie das Deutsche dieselbe Bedeutung mit Wörtern (statt Suffixen) leistet."),
@@ -512,8 +512,9 @@ GUIDE = dict(
    "<li><b>Nach Priorität:</b> im Menü <i>★ Nach Priorität</i> – Themen sortiert nach Häufigkeit, "
    "Fossilisierungsgefahr und Lehrplan-Gewicht; <span class='kern' style='padding:1px 7px'>★ Kern</span>-Themen "
    "lohnen den frühesten Zugriff.</li>"
-   "<li><b>Anlassbezogen (diagnostisch):</b> von einer beobachteten Lernerform ausgehen – über die "
-   "<i>Suche</i> das passende Thema finden und die Interferenzanalyse als Diagnosehilfe nutzen.</li></ul>"),
+   "<li><b>Anlassbezogen (diagnostisch):</b> von einer beobachteten Lernerform ausgehen – die <i>Suche</i> "
+   "findet auch Lernerformen (z. B. „Heute ich gehe“) und führt zum passenden Thema; dort im "
+   "<b>🧠 Übungsmodus</b> Zielform, Ursache und Typ erst selbst bestimmen, dann aufdecken.</li></ul>"),
   ("Materialien zum Mitnehmen",
    P("Jedes Thema gibt es als <b>PDF-Dossier</b> (Button auf der Themenseite), dazu vier "
      "<b>Arbeitsblätter mit Lösungsschlüssel</b>, die <b>Literaturliste</b>, das <b>Fazit</b> und den "

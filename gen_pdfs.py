@@ -5,6 +5,10 @@ Quelle: content.py (einzige Inhaltsquelle)."""
 import os, datetime
 from weasyprint import HTML
 import content as C
+try:
+    import markdown as _md
+except ImportError:
+    _md = None
 
 OUT=os.path.dirname(os.path.abspath(__file__))  # Skript-Ordner – funktioniert lokal & in CI
 for d in ("themen","arbeitsblaetter","literatur"):
@@ -199,5 +203,15 @@ for cat,items in C.LIT.items():
 lit.append(f'<div class="foot">Auswahl als Referenzmaterial &middot; Stand: {DATE} &middot; '
            f'Konzept &amp; alle Rechte: Dr. Ergun &Ouml;zsoy, LMU M&uuml;nchen.</div>')
 render(f"{OUT}/literatur/literatur-de-tr.pdf", "".join(lit))
+
+# ---- Werkstattbericht-PDF (aus YAMA_WERKSTATT.md) -------------------------
+print("Werkstatt:")
+wpath=f"{OUT}/YAMA_WERKSTATT.md"
+if _md and os.path.exists(wpath):
+    body_html=_md.markdown(open(wpath, encoding="utf-8").read(), extensions=["tables","sane_lists"])
+    inner=(f'<div class="kicker">Werkstattbericht &middot; Digital-Humanities-Projekt</div>{body_html}')
+    render(f"{OUT}/werkstatt.pdf", inner, gold=True)
+else:
+    print("  (uebersprungen: markdown fehlt oder Datei nicht gefunden)")
 
 print("\nFERTIG.")

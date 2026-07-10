@@ -442,11 +442,32 @@ LIT = {
   dict(a="Ekinci-Kocks, Y. / Hoffmann, L. u. a. (Hg.)", y="2013", t="Migration – Mehrsprachigkeit – Bildung",
        q="Tübingen: Stauffenburg"),
  ],
+ "DaZ/DaF-Didaktik & Zweitspracherwerb (Grundlagen)": [
+  dict(a="Ahrenholz, Bernt / Oomen-Welke, Ingelore (Hg.)", y="2017", t="Deutsch als Zweitsprache",
+       q="Deutschunterricht in Theorie und Praxis, Bd. 9; 4. Aufl. Baltmannsweiler: Schneider Verlag Hohengehren"),
+  dict(a="Hoffmann, L. / Kameyama, S. / Riedel, M. / Şahiner, P. / Wulff, N. (Hg.)", y="2017",
+       t="Deutsch als Zweitsprache. Ein Handbuch für die Lehrerausbildung",
+       q="Berlin: Erich Schmidt Verlag (mit kontrastivem Überblick über Partnersprachen)"),
+  dict(a="Jeuk, Stefan", y="2018", t="Deutsch als Zweitsprache in der Schule. Grundlagen – Diagnose – Förderung",
+       q="4. Aufl. Stuttgart: W. Kohlhammer"),
+  dict(a="Michalak, Magdalena / Kuchenreuther, Michaela (Hg.)", y="2015",
+       t="Grundlagen der Sprachdidaktik Deutsch als Zweitsprache",
+       q="3. Aufl. Baltmannsweiler: Schneider Verlag Hohengehren"),
+  dict(a="Kniffka, Gabriele / Siebert-Ott, Gesa", y="2012", t="Deutsch als Zweitsprache. Lehren und Lernen",
+       q="3. Aufl. Paderborn: Schöningh (UTB)"),
+  dict(a="Barkowski, Hans / Krumm, Hans-Jürgen (Hg.)", y="2010", t="Fachlexikon Deutsch als Fremd- und Zweitsprache",
+       q="Tübingen: A. Francke (UTB)"),
+  dict(a="Topalović, Elvira / Michalak, Magdalena", y="2015", t="Sprachreflexion und Grammatik zwischen DaM und DaZ",
+       q="in: Michalak/Kuchenreuther (Hg.), Grundlagen der Sprachdidaktik DaZ, 226–250"),
+  dict(a="Chlosta, Christoph / Schäfer, Andrea / Baur, Rupprecht S.", y="2017", t="Fehleranalyse",
+       q="in: Ahrenholz/Oomen-Welke (Hg.), Deutsch als Zweitsprache (Bd. 9), 353–368"),
+ ],
 }
 LIT_INTRO = ("Auswahlbibliografie zum Sprachvergleich Deutsch–Türkisch und zur DaZ-Didaktik. "
   "Mit ● markierte Titel liegen als Referenzmaterial im Projekt vor; mit ✦ markierte sind "
-  "aktuelle Arbeiten (2020+). Die Liste dient als Referenz – Konzept und Inhalt der Plattform "
-  "stammen von Dr. Ergun Özsoy.")
+  "aktuelle Arbeiten (2020+). Die letzte Rubrik versammelt didaktische und zweitspracherwerbliche "
+  "Grundlagenwerke (sprachübergreifend, u. a. aus den DaZ-Literaturempfehlungen der LMU). "
+  "Die Liste dient als Referenz – Konzept und Inhalt der Plattform stammen von Dr. Ergun Özsoy.")
 
 def app_json():
     return {"modules":MODULES,"detail":DETAIL,"sheets":SHEETS,
